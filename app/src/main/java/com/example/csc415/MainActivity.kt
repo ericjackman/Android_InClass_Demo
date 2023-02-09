@@ -22,10 +22,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun createHeadphones() : MutableList<Headphone> {
         val headphones = mutableListOf<Headphone>()
-        headphones.add(Headphone(name = "Sundara", image = R.drawable.baseline_3p_24, brand = "Hifiman"))
-        headphones.add(Headphone(name = "Elegia", image = R.drawable.baseline_3p_24, brand = "Focal"))
-        headphones.add(Headphone(name = "Aeon 2 Noire", image = R.drawable.baseline_3p_24, brand = "Dan Clark Audio"))
-        headphones.add(Headphone(name = "LCD-2", image = R.drawable.baseline_3p_24, brand = "Audeze"))
+        headphones.add(Headphone(name = "Sundara", image = R.mipmap.hifiman_sundara, brand = "Hifiman"))
+        headphones.add(Headphone(name = "Elegia", image = R.mipmap.hifiman_sundara, brand = "Focal"))
+        headphones.add(Headphone(name = "Aeon 2 Noire", image = R.mipmap.hifiman_sundara, brand = "Dan Clark Audio"))
+        headphones.add(Headphone(name = "LCD-2", image = R.mipmap.hifiman_sundara, brand = "Audeze"))
+        headphones.add(Headphone(name = "DT 1990", image = R.mipmap.hifiman_sundara, brand = "Beyerdynamic"))
+        headphones.add(Headphone(name = "HD 600", image = R.mipmap.hifiman_sundara, brand = "Sennheiser"))
+        headphones.add(Headphone(name = "109 Pro", image = R.mipmap.hifiman_sundara, brand = "Meze"))
         return headphones
     }
 }
