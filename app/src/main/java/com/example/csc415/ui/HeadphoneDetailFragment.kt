@@ -26,18 +26,17 @@ class HeadphoneDetailFragment : Fragment() {
         if (arguments != null) {
             val name = requireArguments().getString("name")
             val brand = requireArguments().getString("brand")
-            val image = requireArguments().getInt("image")
+            val image = requireArguments().getString("image")
             val price = requireArguments().getInt("price")
             val weight = requireArguments().getInt("weight")
             val driver = requireArguments().getString("driver")
             val imp = requireArguments().getInt("impedance")
             val sens = requireArguments().getInt("sensitivity")
 
-//            Glide
-//                .with(this)
-//                .load(image)
-//                .into(view.findViewById<ImageView>(R.id.headphone_detail_image))
-            view.findViewById<ImageView>(R.id.headphone_detail_image).setImageResource(image)
+            Glide
+                .with(this)
+                .load(image)
+                .into(view.findViewById<ImageView>(R.id.headphone_detail_image))
             view.findViewById<TextView>(R.id.headphone_detail_name).text = "$brand $name"
             view.findViewById<TextView>(R.id.headphone_detail_price).text = "Price: \$$price"
             view.findViewById<TextView>(R.id.headphone_detail_weight).text = "Weight: $weight grams"

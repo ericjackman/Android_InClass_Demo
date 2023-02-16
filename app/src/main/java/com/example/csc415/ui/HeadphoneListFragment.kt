@@ -37,7 +37,7 @@ class HeadphoneListFragment : Fragment() {
         headphones.add(
             Headphone(
                 name = "Sundara",
-                image = R.mipmap.hifiman_sundara,
+                image = "https://m.media-amazon.com/images/I/61eJhLsaV0L.jpg",
                 brand = "Hifiman",
                 price = 300,
                 weight = 320,
@@ -49,7 +49,7 @@ class HeadphoneListFragment : Fragment() {
         headphones.add(
             Headphone(
                 name = "Elegia",
-                image = R.mipmap.focal_elegia,
+                image = "https://m.media-amazon.com/images/I/61QG3++KTUL.jpg",
                 brand = "Focal",
                 price = 400,
                 weight = 380,
@@ -61,41 +61,43 @@ class HeadphoneListFragment : Fragment() {
         headphones.add(
             Headphone(
                 name = "Aeon 2 Noire",
-                image = R.mipmap.dca_aeon2,
+                image = "https://m.media-amazon.com/images/I/51aR7GX0q3L._AC_UF894,1000_QL80_.jpg",
                 brand = "Dan Clark Audio",
-                price = 900
+                price = 900,
+                weight = 300,
+                driverType = "Planar",
+                impedance = 12,
+                sensitivity = 91
             )
         )
         headphones.add(
             Headphone(
                 name = "LCD-2",
-                image = R.mipmap.audeze_lcd2,
+                image = "https://m.media-amazon.com/images/I/81o0PAuncdL._AC_SL1500_.jpg",
                 brand = "Audeze",
-                price = 800
+                price = 800,
+                weight = 600,
+                driverType = "Planar"
             )
         )
         headphones.add(
             Headphone(
-                name = "DT 1990",
-                image = R.mipmap.deyer_dt1990,
-                brand = "Beyerdynamic",
-                price = 500
-            )
-        )
-        headphones.add(
-            Headphone(
-                name = "HD 600",
-                image = R.mipmap.sennheiser_hd600,
+                name = "HD 800s",
+                image = "https://m.media-amazon.com/images/I/710Zn2k1hLL.jpg",
                 brand = "Sennheiser",
-                price = 300
+                price = 1600,
+                weight = 320,
+                driverType = "Dynamic"
             )
         )
         headphones.add(
             Headphone(
-                name = "109 Pro",
-                image = R.mipmap.meze_109pro,
-                brand = "Meze",
-                price = 800
+                name = "Clear MG",
+                image = "https://m.media-amazon.com/images/I/71yBEU79dGL._AC_SX466_.jpg",
+                brand = "Focal",
+                price = 1500,
+                weight = 450,
+                driverType = "Dynamic"
             )
         )
         return headphones

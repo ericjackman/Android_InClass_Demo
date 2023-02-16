@@ -19,6 +19,7 @@
             android:layout_height="100dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:paddingEnd="16dp"
             tools:src="@drawable/baseline_3p_24"/>
 
         <TextView

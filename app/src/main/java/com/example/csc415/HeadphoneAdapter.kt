@@ -11,6 +11,8 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.commit
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.module.AppGlideModule
 import com.example.csc415.ui.HeadphoneDetailFragment
 
 class HeadphoneAdapter(private val headphones: List<Headphone>) :
@@ -52,11 +54,10 @@ class HeadphoneAdapter(private val headphones: List<Headphone>) :
 
     override fun onBindViewHolder(holder: HeadphoneViewHolder, position: Int) {
         val headphone = headphones[position]
-//        Glide
-//            .with(holder.itemView.context)
-//            .load(headphone.image)
-//            .into(holder.headphoneImage)
-        holder.headphoneImage.setImageResource(headphone.image)
+        Glide
+            .with(holder.itemView.context)
+            .load(headphone.image)
+            .into(holder.headphoneImage)
         holder.headphoneName.text = headphone.name
         holder.headphoneBrand.text = headphone.brand
     }
@@ -76,4 +77,10 @@ class HeadphoneAdapter(private val headphones: List<Headphone>) :
         }
     }
 
+}
+
+// new since Glide v4
+@GlideModule
+class MyAppGlideModule : AppGlideModule() {
+    // leave empty for now
 }
