@@ -3,10 +3,11 @@ package com.example.csc415
 data class Headphone(
     val name: String,
     val image: Int,
+    //val image: String,
     val brand: String,
-    //val price: Int,
-    //val driver: String,
-    //val weight: Int,
-    //val impedance: String,
-    //val sensitivity: String,
+    val price: Int,
+    val weight: Int = 400,
+    val driverType: String = "Dynamic",
+    val impedance: Int = 32,
+    val sensitivity: Int = 100
 )
