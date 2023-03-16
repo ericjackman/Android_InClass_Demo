@@ -1,6 +1,7 @@
-package com.example.csc415
+package com.example.csc415.model
 
 data class Headphone(
+    val id: Int,
     val name: String,
     val image: String,
     val brand: String,
