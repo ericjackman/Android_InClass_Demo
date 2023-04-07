@@ -13,31 +13,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingTop="16dp"
+            android:paddingStart="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Albums:"/>
+
         <ImageView
-            android:id="@+id/headphone_image"
+            android:id="@+id/album_cover"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:paddingEnd="16dp"
             tools:src="@drawable/baseline_3p_24"/>
 
         <TextView
-            android:id="@+id/headphone_name"
+            android:id="@+id/album_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32sp"
-            app:layout_constraintStart_toEndOf="@id/headphone_image"
+            android:textSize="24sp"
+            android:paddingTop="16dp"
+            android:paddingStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/album_cover"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Text"/>
 
         <TextView
-            android:id="@+id/headphone_brand"
+            android:id="@+id/album_artist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@id/headphone_name"
-            app:layout_constraintTop_toBottomOf="@id/headphone_name"
+            android:textSize="20sp"
+            android:paddingStart="12dp"
+            app:layout_constraintStart_toStartOf="@id/album_title"
+            app:layout_constraintTop_toBottomOf="@id/album_title"
             tools:text="Text"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
